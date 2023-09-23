@@ -1,0 +1,14 @@
+{
+  "name": "socks5-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ./socks5-proxy-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "joes-tldr <https://github.com/joes-tldr/socks5-proxy>",
+  "license": "MIT",
+  "dependencies": {
+    "socksv5": "^0.0.6"
+  }
+}
