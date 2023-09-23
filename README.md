@@ -1,46 +1,20 @@
-# A very lightweight HTTP Proxy
+# A very lightweight SOCKS5 Proxy
 
-Powered by: [tinyproxy](https://github.com/tinyproxy)
+Powered by: [NodeJS](https://nodejs.org/)
 
-DockerHub: https://hub.docker.com/r/joestldr/http-proxy
+DockerHub: https://hub.docker.com/r/joestldr/socks5-proxy
 
-GitHub: https://github.com/joes-tldr/http-proxy
+GitHub: https://github.com/joes-tldr/socks5-proxy
 
 ## TLDR; Quickstart
 
 ```bash
 docker run \
-    --name joestldr-http-proxy \
+    --name joestldr-socks5-proxy \
     --detach \
     --restart=unless-stopped \
-    --publish=3128:3128 \
-  joestldr/http-proxy:latest
-```
-
-## Use config file
-
-Sample (default) `tinyproxy.conf`:
-```
-Port 3128
-Listen 0.0.0.0
-Timeout 600
-Allow 0.0.0.0/0
-LogLevel Connect
-XTinyproxy No
-```
-Ref: http://tinyproxy.github.io
-
-Run with `*.conf` file:
-```bash
-CONF_PATH='/path/to/tinyproxy.conf'
-
-docker run \
-    --name joestldr-http-proxy \
-    --detach \
-    --restart=unless-stopped \
-    --publish=3128:3128 \
-    --mount="type=bind,source=${CONF_PATH},target=/etc/tinyproxy.conf,readonly" \
-  joestldr/http-proxy:latest
+    --publish=1080:1080 \
+  joestldr/socks5-proxy:latest
 ```
 
 # License
