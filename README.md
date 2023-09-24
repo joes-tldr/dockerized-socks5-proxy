@@ -4,7 +4,7 @@ Powered by: [NodeJS](https://nodejs.org/)
 
 DockerHub: https://hub.docker.com/r/joestldr/socks5-proxy
 
-GitHub: https://github.com/joes-tldr/socks5-proxy
+GitHub: https://github.com/joes-tldr/dockerized-socks5-proxy
 
 ## TLDR; Quickstart
 
